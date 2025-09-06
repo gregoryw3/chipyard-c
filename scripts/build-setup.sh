@@ -283,13 +283,13 @@ if run_step "8"; then
     exit_if_last_command_failed
 
     # precompile firemarshal buildroot sources
-    if run_step "9"; then
-        begin_step "9" "Pre-compiling FireMarshal buildroot sources"
-        source $CYDIR/scripts/fix-open-files.sh &&
-        ./marshal $VERBOSE_FLAG build br-base.json &&
-        ./marshal $VERBOSE_FLAG clean br-base.json
-        exit_if_last_command_failed
-    fi
+    #if run_step "9"; then
+    #    begin_step "9" "Pre-compiling FireMarshal buildroot sources"
+    #    source $CYDIR/scripts/fix-open-files.sh &&
+    #    ./marshal $VERBOSE_FLAG build br-base.json &&
+    #    ./marshal $VERBOSE_FLAG clean br-base.json
+    #    exit_if_last_command_failed
+    #fi
     popd
 fi
 
